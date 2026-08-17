@@ -1,0 +1,28 @@
+function Header()
+{
+  return <h1>Welcome to React</h1>;
+}
+
+
+function Course()
+{
+  return <p>Course:MERN Stack Development</p>;
+}
+
+function Student()
+{
+  return <h2>Student Information</h2>;
+}
+
+function App()
+{
+  return(
+    <div>
+      <Header/>
+      <Student/>
+      <Course/>
+    </div>
+  );
+}
+
+export default App;
