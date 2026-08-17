@@ -1,0 +1,23 @@
+import { useState } from "react";
+function App()
+{
+  const[students]=useState([
+    "Aayush",
+    "Sayali",
+    "Parth",
+    "Shrushti",
+    "Shubham"
+  ]);
+  return(
+    <div>
+      <h1>Student List</h1>
+
+      <ul>
+        {students.map((students,index)=>(
+          <li key={index}>{students}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+export default App;
